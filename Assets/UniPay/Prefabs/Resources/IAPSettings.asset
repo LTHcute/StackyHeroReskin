@@ -1,0 +1,891 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb640e96c617068419707c87fc4ddd44, type: 3}
+  m_Name: IAPSettings
+  m_EditorClassIdentifier: 
+  categoryList:
+  - referenceID: 38a8ab21-d007-4d46-9e42-b90a6e4bd4e4
+    ID: ChillyZoom
+    storeIDs: []
+  currencyList:
+  - referenceID: 220be08c-be6d-4e63-a0c7-48b629257b77
+    ID: ticket
+    baseAmount: 50
+    maxAmount: 0
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+  productList:
+  - referenceID: 6923f1f3-e7a5-4f12-b541-21f756485a1d
+    ID: product_item_1
+    storeIDs: []
+    category:
+      rid: 7839931945482715204
+    type: 0
+    title: Ticket x10
+    description: Includes x10 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 1c5285cd08e864fc5b0aaa3d5c086703, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 0.19$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 5205192012697698555
+      product:
+        rid: -2
+      amount: 10
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: f20e8fdb-fb9c-400d-9086-6cf9b2bf33cb
+    ID: product_item_2
+    storeIDs: []
+    category:
+      rid: 7839931945482715204
+    type: 0
+    title: Ticket x20
+    description: Includes x20 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 0.29$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 5205192012697698555
+      product:
+        rid: -2
+      amount: 20
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 605c3f46-482e-4bd6-a9a1-a9d5c539b5d2
+    ID: product_item_3
+    storeIDs: []
+    category:
+      rid: 7839931945482715204
+    type: 0
+    title: Ticket x30
+    description: Includes x30 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 0.49$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 5205192012697698555
+      product:
+        rid: -2
+      amount: 30
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: aa7a9c9d-6c81-43dc-b301-9cb9272fa0c3
+    ID: product_item_4
+    storeIDs: []
+    category:
+      rid: 7839931945482715204
+    type: 0
+    title: Ticket x40
+    description: Includes x40 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 0.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 5205192012697698555
+      product:
+        rid: -2
+      amount: 40
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 170cc26d-3297-4b26-a8cf-21345733cf0c
+    ID: product_item_5
+    storeIDs: []
+    category:
+      rid: 7839931945482715204
+    type: 0
+    title: Ticket x50
+    description: Includes x50 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 1.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 5205192012697698555
+      product:
+        rid: -2
+      amount: 50
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 6e171ea4-01eb-4bc1-88fd-d5fdadcce5d5
+    ID: product_item_6
+    storeIDs: []
+    category:
+      rid: 7839931945482715204
+    type: 0
+    title: Ticket x60
+    description: Includes x60 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 4.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 5205192012697698555
+      product:
+        rid: -2
+      amount: 60
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: ef663a93-7175-48fa-9f08-57b5d6be2212
+    ID: product_item_7
+    storeIDs: []
+    category:
+      rid: 7839931945482715204
+    type: 0
+    title: Ticket x70
+    description: Includes x70 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 7.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 5205192012697698555
+      product:
+        rid: -2
+      amount: 70
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 643bfd03-67df-4688-aefe-0c3a4acaef1a
+    ID: product_item_8
+    storeIDs: []
+    category:
+      rid: 5205192012697698546
+    type: 0
+    title: Ticket x80
+    description: Includes x80 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 9.99$
+    rewardList:
+    - type: 1
+      currency:
+        rid: 5205192012697698547
+      product:
+        rid: -2
+      amount: 80
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 8878e094-5c69-4f1c-9dce-61c294dddea9
+    ID: sub_pack_1
+    storeIDs: []
+    category:
+      rid: 5205192012697698546
+    type: 2
+    title: Subscription pack 1
+    description: Includes x5 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 1.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 5205192012697698548
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 5205192012697698547
+      product:
+        rid: -2
+      amount: 5
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 883d00d7-3a57-4f4b-a0f7-025ee8d00f18
+    ID: sub_pack_2
+    storeIDs: []
+    category:
+      rid: 5205192012697698546
+    type: 2
+    title: Subscription pack 2
+    description: Includes x10 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 2.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 5205192012697698549
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 5205192012697698547
+      product:
+        rid: -2
+      amount: 10
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: b5761155-e93f-441c-8b4a-7907ab276910
+    ID: sub_pack_3
+    storeIDs: []
+    category:
+      rid: 5205192012697698546
+    type: 2
+    title: Subscription pack 3
+    description: Includes x15 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 4.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 5205192012697698550
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 5205192012697698547
+      product:
+        rid: -2
+      amount: 15
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 4691552d-40b6-4183-8d57-fc845c26e4f8
+    ID: sub_pack_4
+    storeIDs: []
+    category:
+      rid: 5205192012697698546
+    type: 2
+    title: Subscription pack 4
+    description: Includes x20 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 7.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 5205192012697698551
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 5205192012697698547
+      product:
+        rid: -2
+      amount: 20
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: b4f88183-6000-43d4-97ee-5c451443fe1c
+    ID: sub_pack_5
+    storeIDs: []
+    category:
+      rid: 5205192012697698546
+    type: 2
+    title: Subscription pack 5
+    description: Includes x25 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 9.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 5205192012697698552
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 5205192012697698547
+      product:
+        rid: -2
+      amount: 25
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 90164ad2-4720-4b62-a80d-afeb13f8582e
+    ID: sub_pack_6
+    storeIDs: []
+    category:
+      rid: 5205192012697698546
+    type: 2
+    title: Subscription pack 6
+    description: Includes x30 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 14.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 5205192012697698553
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 5205192012697698547
+      product:
+        rid: -2
+      amount: 30
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  - referenceID: 2a8ce290-307d-40b0-8d3e-11ce83a3307f
+    ID: sub_pack_7
+    storeIDs: []
+    category:
+      rid: 5205192012697698546
+    type: 2
+    title: Subscription pack 7
+    description: Includes x35 Ticket
+    discount: 0
+    fetch: 1
+    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    priceList:
+    - type: 0
+      currency:
+        rid: -2
+      product:
+        rid: -2
+      amount: 0
+      realPrice: 19.99$
+    rewardList:
+    - type: 2
+      currency:
+        rid: -2
+      product:
+        rid: 5205192012697698554
+      amount: 1
+      realPrice: 
+    - type: 1
+      currency:
+        rid: 5205192012697698547
+      product:
+        rid: -2
+      amount: 35
+      realPrice: 
+    requirement:
+      pairs: []
+      label: 
+    nextUpgrade:
+      rid: -2
+  customStoreConfig:
+    PayPal:
+      currencyCode: USD
+      sandbox:
+        clientID: 
+        secretKey: 
+      live:
+        clientID: 
+        secretKey: 
+      returnUrl: 
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5205192012697698546
+      type: {class: IAPCategory, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 38a8ab21-d007-4d46-9e42-b90a6e4bd4e4
+        ID: ChillyZoom
+        storeIDs: []
+    - rid: 5205192012697698547
+      type: {class: IAPCurrency, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 220be08c-be6d-4e63-a0c7-48b629257b77
+        ID: ticket
+        baseAmount: 50
+        maxAmount: 0
+        icon: {fileID: 21300000, guid: 18515ac390cbc4107818796f723d8b1e, type: 3}
+    - rid: 5205192012697698548
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 8878e094-5c69-4f1c-9dce-61c294dddea9
+        ID: sub_pack_1
+        storeIDs: []
+        category:
+          rid: 5205192012697698546
+        type: 2
+        title: Pack 1
+        description: Includes x5 Ticket
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 1.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 5205192012697698548
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 5205192012697698547
+          product:
+            rid: -2
+          amount: 5
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 5205192012697698549
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 883d00d7-3a57-4f4b-a0f7-025ee8d00f18
+        ID: sub_pack_2
+        storeIDs: []
+        category:
+          rid: 5205192012697698546
+        type: 2
+        title: Pack 2
+        description: Includes x10 Ticket
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 2.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 5205192012697698549
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 5205192012697698547
+          product:
+            rid: -2
+          amount: 10
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 5205192012697698550
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: b5761155-e93f-441c-8b4a-7907ab276910
+        ID: sub_pack_3
+        storeIDs: []
+        category:
+          rid: 5205192012697698546
+        type: 2
+        title: Pack 3
+        description: Includes x15 Ticket
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 4.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 5205192012697698550
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 5205192012697698547
+          product:
+            rid: -2
+          amount: 15
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 5205192012697698551
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 4691552d-40b6-4183-8d57-fc845c26e4f8
+        ID: sub_pack_4
+        storeIDs: []
+        category:
+          rid: 5205192012697698546
+        type: 2
+        title: Pack 4
+        description: Includes x20 Ticket
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 7.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 5205192012697698551
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 5205192012697698547
+          product:
+            rid: -2
+          amount: 20
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 5205192012697698552
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: b4f88183-6000-43d4-97ee-5c451443fe1c
+        ID: sub_pack_5
+        storeIDs: []
+        category:
+          rid: 5205192012697698546
+        type: 2
+        title: Pack 5
+        description: Includes x25 Ticket
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 9.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 5205192012697698552
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 5205192012697698547
+          product:
+            rid: -2
+          amount: 25
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 5205192012697698553
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 90164ad2-4720-4b62-a80d-afeb13f8582e
+        ID: sub_pack_6
+        storeIDs: []
+        category:
+          rid: 5205192012697698546
+        type: 2
+        title: Pack 6
+        description: Includes x30 Ticket
+        discount: 0
+        fetch: 1
+        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 14.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 5205192012697698553
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 5205192012697698547
+          product:
+            rid: -2
+          amount: 30
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 5205192012697698554
+      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 2a8ce290-307d-40b0-8d3e-11ce83a3307f
+        ID: sub_pack_7
+        storeIDs: []
+        category:
+          rid: 5205192012697698546
+        type: 2
+        title: Pack 7
+        description: Includes x35 Ticket
+        discount: 0
+        fetch: 0
+        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+        priceList:
+        - type: 0
+          currency:
+            rid: -2
+          product:
+            rid: -2
+          amount: 0
+          realPrice: 19.99$
+        rewardList:
+        - type: 2
+          currency:
+            rid: -2
+          product:
+            rid: 5205192012697698554
+          amount: 1
+          realPrice: 
+        - type: 1
+          currency:
+            rid: 5205192012697698547
+          product:
+            rid: -2
+          amount: 35
+          realPrice: 
+        requirement:
+          pairs: []
+          label: 
+        nextUpgrade:
+          rid: -2
+    - rid: 5205192012697698555
+      type: {class: IAPCurrency, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 220be08c-be6d-4e63-a0c7-48b629257b77
+        ID: ticket
+        baseAmount: 50
+        maxAmount: 0
+        icon: {fileID: 21300000, guid: 18515ac390cbc4107818796f723d8b1e, type: 3}
+    - rid: 7839931945482715204
+      type: {class: IAPCategory, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 38a8ab21-d007-4d46-9e42-b90a6e4bd4e4
+        ID: DiamondRush
+        storeIDs: []
