@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: superjennie
-  productName: Chilly Zoom
+  companyName: hoainhi
+  productName: Suft Dash
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -140,7 +140,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
-  bundleVersion: 1.1.0
+  bundleVersion: 1.0
   preloadedAssets:
   - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   metroInputSource: 0
@@ -164,11 +164,11 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.superjennie.ChillyZoom
-    Standalone: com.Unity-Technologies.com.unity.template.urp-blank
+    Android: com.hoainhi.SuftDash
+    Standalone: com.hoainhi.SuftDash
     iPhone: com.Unity-Technologies.com.unity.template.urp-blank
   buildNumber:
-    Standalone: 0
+    Standalone: 1
     VisionOS: 0
     iPhone: 0
     tvOS: 0
@@ -267,7 +267,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: user.keystore'
+  AndroidKeystoreName: '{inproject}: key.keystore'
   AndroidKeyaliasName: jennie
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidEnableArm64MTE: 0
@@ -925,10 +925,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: c2bfec82-6bda-4b64-aa9b-d358eca53244
+  cloudProjectId: 267e3541-d8e6-4c54-b3dd-a2e94d8b0e03
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Chilly Zoom
+  projectName: Suft Dash
   organizationId: jennieluong
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

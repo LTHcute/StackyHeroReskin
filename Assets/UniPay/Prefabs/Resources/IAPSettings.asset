@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   categoryList:
   - referenceID: 38a8ab21-d007-4d46-9e42-b90a6e4bd4e4
-    ID: ChillyZoom
+    ID: SuftDash
     storeIDs: []
   currencyList:
   - referenceID: 220be08c-be6d-4e63-a0c7-48b629257b77
-    ID: ticket
+    ID: gem
     baseAmount: 50
     maxAmount: 0
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: 8b06dbfc926e74780a39e8a7d3b1edc0, type: 3}
   productList:
   - referenceID: 6923f1f3-e7a5-4f12-b541-21f756485a1d
     ID: product_item_1
@@ -29,11 +29,11 @@ MonoBehaviour:
     category:
       rid: 7839931945482715204
     type: 0
-    title: Ticket x10
-    description: Includes x10 Ticket
+    title: Gem x10
+    description: Includes x10 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 1c5285cd08e864fc5b0aaa3d5c086703, type: 3}
+    icon: {fileID: 21300000, guid: 8b06dbfc926e74780a39e8a7d3b1edc0, type: 3}
     priceList:
     - type: 0
       currency:
@@ -61,11 +61,11 @@ MonoBehaviour:
     category:
       rid: 7839931945482715204
     type: 0
-    title: Ticket x20
-    description: Includes x20 Ticket
+    title: Gem x20
+    description: Includes x20 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: 5e87b8b2593df4ee595cebd3d89fe1a9, type: 3}
     priceList:
     - type: 0
       currency:
@@ -93,11 +93,11 @@ MonoBehaviour:
     category:
       rid: 7839931945482715204
     type: 0
-    title: Ticket x30
-    description: Includes x30 Ticket
+    title: Gem x30
+    description: Includes x30 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: f7cd3b806af94472a8a7e79167b44acd, type: 3}
     priceList:
     - type: 0
       currency:
@@ -125,11 +125,11 @@ MonoBehaviour:
     category:
       rid: 7839931945482715204
     type: 0
-    title: Ticket x40
-    description: Includes x40 Ticket
+    title: Gem x40
+    description: Includes x40 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    icon: {fileID: 21300000, guid: f7cd3b806af94472a8a7e79167b44acd, type: 3}
     priceList:
     - type: 0
       currency:
@@ -157,11 +157,11 @@ MonoBehaviour:
     category:
       rid: 7839931945482715204
     type: 0
-    title: Ticket x50
-    description: Includes x50 Ticket
+    title: Gem x50
+    description: Includes x50 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    icon: {fileID: 21300000, guid: 55ad0c04d16d94acd8f056ca89aaedce, type: 3}
     priceList:
     - type: 0
       currency:
@@ -189,11 +189,11 @@ MonoBehaviour:
     category:
       rid: 7839931945482715204
     type: 0
-    title: Ticket x60
-    description: Includes x60 Ticket
+    title: Gem x60
+    description: Includes x60 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    icon: {fileID: 21300000, guid: bd1a625b83dbe4836900732208642b44, type: 3}
     priceList:
     - type: 0
       currency:
@@ -221,11 +221,11 @@ MonoBehaviour:
     category:
       rid: 7839931945482715204
     type: 0
-    title: Ticket x70
-    description: Includes x70 Ticket
+    title: Gem x70
+    description: Includes x70 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    icon: {fileID: 21300000, guid: e525f61e48fc047bb802429883423d3f, type: 3}
     priceList:
     - type: 0
       currency:
@@ -253,11 +253,11 @@ MonoBehaviour:
     category:
       rid: 5205192012697698546
     type: 0
-    title: Ticket x80
-    description: Includes x80 Ticket
+    title: Gem x80
+    description: Includes x80 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: 7c39fc1ba4a584b23a550672d71ed014, type: 3}
     priceList:
     - type: 0
       currency:
@@ -286,10 +286,10 @@ MonoBehaviour:
       rid: 5205192012697698546
     type: 2
     title: Subscription pack 1
-    description: Includes x5 Ticket
+    description: Includes x5 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
+    icon: {fileID: 21300000, guid: 5e87b8b2593df4ee595cebd3d89fe1a9, type: 3}
     priceList:
     - type: 0
       currency:
@@ -325,10 +325,10 @@ MonoBehaviour:
       rid: 5205192012697698546
     type: 2
     title: Subscription pack 2
-    description: Includes x10 Ticket
+    description: Includes x10 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: 5e87b8b2593df4ee595cebd3d89fe1a9, type: 3}
     priceList:
     - type: 0
       currency:
@@ -364,10 +364,10 @@ MonoBehaviour:
       rid: 5205192012697698546
     type: 2
     title: Subscription pack 3
-    description: Includes x15 Ticket
+    description: Includes x15 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: f7cd3b806af94472a8a7e79167b44acd, type: 3}
     priceList:
     - type: 0
       currency:
@@ -403,10 +403,10 @@ MonoBehaviour:
       rid: 5205192012697698546
     type: 2
     title: Subscription pack 4
-    description: Includes x20 Ticket
+    description: Includes x20 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: 55ad0c04d16d94acd8f056ca89aaedce, type: 3}
     priceList:
     - type: 0
       currency:
@@ -442,10 +442,10 @@ MonoBehaviour:
       rid: 5205192012697698546
     type: 2
     title: Subscription pack 5
-    description: Includes x25 Ticket
+    description: Includes x25 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: bd1a625b83dbe4836900732208642b44, type: 3}
     priceList:
     - type: 0
       currency:
@@ -481,10 +481,10 @@ MonoBehaviour:
       rid: 5205192012697698546
     type: 2
     title: Subscription pack 6
-    description: Includes x30 Ticket
+    description: Includes x30 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: e525f61e48fc047bb802429883423d3f, type: 3}
     priceList:
     - type: 0
       currency:
@@ -520,10 +520,10 @@ MonoBehaviour:
       rid: 5205192012697698546
     type: 2
     title: Subscription pack 7
-    description: Includes x35 Ticket
+    description: Includes x35 Gem
     discount: 0
     fetch: 1
-    icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
+    icon: {fileID: 21300000, guid: 7c39fc1ba4a584b23a550672d71ed014, type: 3}
     priceList:
     - type: 0
       currency:

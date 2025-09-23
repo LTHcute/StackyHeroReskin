@@ -15,7 +15,7 @@ public enum GameState
 
 public class GameManager_stickhero : MonoBehaviour
 {
-    public static string DIAMOND = "ticket";
+    public static string DIAMOND = "gem";
 
     [SerializeField]
     private Vector3 startPos;
@@ -53,7 +53,8 @@ public class GameManager_stickhero : MonoBehaviour
 
     public GameObject intro;
     public GameObject topBar, panelScore, start, storeButton, notification;
-
+    public GameObject sharkPrefab;
+    public GameObject wave;
 
     private void OnEnable()
     {
@@ -97,20 +98,30 @@ public class GameManager_stickhero : MonoBehaviour
     IEnumerator On()
     {
         yield return StartCoroutine(HideIntro());
-        Debug.Log("continue");
+       // Debug.Log("continue");
         yield return StartCoroutine(CreateMenu());
 
     }
 
     IEnumerator CreateMenu()
     {
-        Debug.Log("Create menu");
+       // Debug.Log("Create menu");
 
        
 
         score = 0;
         highScore = PlayerPrefs.HasKey("HighScore_stickhero") ? PlayerPrefs.GetInt("HighScore_stickhero") : 0;
+        // tạo cá mập
+        //BoxCollider waveCollider = wave.GetComponent<BoxCollider>();
+        //Bounds bounds = waveCollider.bounds;
 
+      
+        //float randomX = Random.Range(bounds.min.x, bounds.max.x);
+        //float randomY = Random.Range(bounds.min.y, bounds.max.y);
+
+        //Vector3 spawnPos = new Vector3(randomX, randomY, 0f);
+        //Instantiate(sharkPrefab, spawnPos, Quaternion.identity);
+        // GameObject sharks = Instantiate(sharkPrefab,wave.);
         scoreText.text = score.ToString();
         int diamond = DBManager.GetCurrency(DIAMOND);
         diamondsText.text = diamond.ToString();
@@ -119,7 +130,7 @@ public class GameManager_stickhero : MonoBehaviour
         CreateStartObjects();
         cameraOffsetX = currentCamera.transform.position.x - player.transform.position.x;
         yield return null;
-        Debug.Log("Done menu");
+      //  Debug.Log("Done menu");
     }    
 
     private void Start()
@@ -183,9 +194,12 @@ public class GameManager_stickhero : MonoBehaviour
         yield return x;
 
         var results = Physics2D.RaycastAll(player.transform.position,Vector2.down);
+        
         var result = Physics2D.Raycast(player.transform.position, Vector2.down);
         foreach (var temp in results)
         {
+            //Debug.Log("1");
+            //Debug.Log(temp.collider);
             if(temp.collider.CompareTag("Platform"))
             {
                 result = temp;
@@ -215,13 +229,21 @@ public class GameManager_stickhero : MonoBehaviour
             yield return x;
 
             CreatePlatform();
-            SetRandomSize(nextPillar);
+           // SetRandomSize(nextPillar);
             currentState = GameState.INPUT;
             Vector3 stickPosition = currentPillar.transform.position;
+           
             stickPosition.x += currentPillar.transform.localScale.x * 0.5f - 0.05f;
             stickPosition.y = currentStick.transform.position.y;
             stickPosition.z = currentStick.transform.position.z;
-            currentStick = Instantiate(stickPrefab, stickPosition, Quaternion.identity);
+           
+            Vector3 newPoss = new Vector3(stickPosition.x, stickPosition.y, stickPosition.z);
+            currentStick = Instantiate(stickPrefab, newPoss, Quaternion.identity);
+
+            Vector3 colliderOfSticj = currentPillar.GetComponent<BoxCollider2D>().transform.position;
+            Vector3 size = currentPillar.GetComponent<BoxCollider2D>().bounds.size;
+            Debug.Log("size:" + size);
+            Debug.Log("pos:" + colliderOfSticj);
         }
     }
 
@@ -238,31 +260,36 @@ public class GameManager_stickhero : MonoBehaviour
         player.name = "Player";
 
         Vector3 stickPos = stickPrefab.transform.position;
-        stickPos.x += (currentPillar.transform.localScale.x*0.5f - 0.05f);
+        stickPos.x += (currentPillar.transform.localScale.x +currentPillar.transform.localScale.x * 0.5f - 0.05f);
         stickPos.y = currentPillar.transform.position.y + currentPillar.transform.localScale.y; //Thêm dòng này
+        //stickPos.x += currentPillar.transform.localScale.x * 0.5f - 0.05f;
+        //stickPos.y = currentPillar.transform.position.y;
+        //stickPos.z = currentPillar.transform.position.z;
         currentStick = Instantiate(stickPrefab, stickPos, Quaternion.identity);
     }
 
     void CreatePlatform()
     {
+        Debug.Log("tạo platform");
         var currentPlatform = Instantiate(pillarPrefab);
         currentPlatform.transform.localScale = new Vector3(
-    currentPlatform.transform.localScale.x,   // giữ nguyên chiều ngang   Thêm dòng này 
-    currentPlatform.transform.localScale.y * 2f, // tăng chiều cao gấp đôi
-    currentPlatform.transform.localScale.z    // giữ nguyên chiều sâu
+        currentPlatform.transform.localScale.x,   // giữ nguyên chiều ngang   Thêm dòng này 
+        currentPlatform.transform.localScale.y * 2f, // tăng chiều cao gấp đôi
+        currentPlatform.transform.localScale.z    // giữ nguyên chiều sâu
 );
+       // Debug.Log(currentPlatform.transform.localScale);
         currentPillar = nextPillar == null ? currentPlatform : nextPillar;
         nextPillar = currentPlatform;
         currentPlatform.transform.position = pillarPrefab.transform.position + startPos;
         Vector3 tempDistance = new Vector3(Random.Range(spawnRange.x,spawnRange.y) + currentPillar.transform.localScale.x*0.5f,0,0);
         startPos += tempDistance;
 
-        if(Random.Range(0,10) == 0)
+        if(Random.Range(0,20) == 0)
         {
             var tempDiamond = Instantiate(diamondPrefab);
             Vector3 tempPos = currentPlatform.transform.position;
             tempPos.y = currentPlatform.transform.position.y - currentPlatform.transform.position.y/1.5f;
-           
+           // tempPos.x = currentPlatform.transform.position.x - currentPlatform.transform.position.x/2;
             tempDiamond.transform.position = tempPos;
         }
     }
@@ -325,9 +352,9 @@ public class GameManager_stickhero : MonoBehaviour
             startPanel.SetActive(false);
             scorePanel.SetActive(true);
             storeButton.SetActive(false);
-
+          //  CreateShark();
             CreatePlatform();
-            SetRandomSize(nextPillar);
+          //  SetRandomSize(nextPillar);
             currentState = GameState.INPUT;
         }
         else
@@ -391,6 +418,30 @@ public class GameManager_stickhero : MonoBehaviour
         var init = currentTransform.transform.position;
         while(passed < time)
         {
+            //var x = Rotate(currentStick.transform, rotateTransform, 0.4f);
+            //yield return x;
+            var results = Physics2D.RaycastAll(player.transform.position, Vector2.down);
+
+            var result = Physics2D.Raycast(player.transform.position, Vector2.down);
+            foreach (var temp in results)
+            {
+                Debug.Log("1");
+                Debug.Log(temp.collider);
+                if (temp.collider.CompareTag("Stick"))
+                {
+                    result = temp;
+                    Debug.Log(result);
+                }
+            }
+            //if (!result || !result.collider.CompareTag("Stick") || !result.collider.CompareTag("Platform"))
+            //{
+            //    AudioManager.instance.PlayGameOver();
+            //    player.GetComponent<Rigidbody2D>().gravityScale = 1f;
+            //     var x = Rotate(currentStick.transform, endRotateTransform, 0.5f);
+            //    yield return x;
+            //    GameOver();
+            //    break;
+            //}
             passed += Time.deltaTime;
             var normalized = passed / time;
             var current = Vector3.Lerp(init, target, normalized);
@@ -456,4 +507,25 @@ public class GameManager_stickhero : MonoBehaviour
         start.SetActive(true);
         storeButton.SetActive(true);    
     }    
+
+
+    public void CreateShark()
+    {
+        Debug.Log("tạo shark");
+        Vector3 center = wave.transform.position;
+        Vector3 size = wave.transform.localScale;
+
+        int sharkAmount = Random.Range(1, 3);
+        for (int i = 0; i < sharkAmount; i++)
+        {
+            float randomX = center.x + Random.Range(-size.x / 2, size.x / 2);
+            float randomY = center.y + Random.Range(-size.y / 2, size.y / 2);
+            float randomZ = center.z + Random.Range(-size.z / 2, size.z / 2);
+
+            Vector3 spawnPos = new Vector3(randomX, randomY, randomZ);
+
+            GameObject shark = Instantiate(sharkPrefab, spawnPos, Quaternion.identity, wave.transform);
+        }
+
+    }
 }
