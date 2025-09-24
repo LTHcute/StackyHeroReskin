@@ -55,6 +55,7 @@ public class GameManager_stickhero : MonoBehaviour
     public GameObject topBar, panelScore, start, storeButton, notification;
     public GameObject sharkPrefab;
     public GameObject wave;
+    
 
     private void OnEnable()
     {
@@ -344,7 +345,7 @@ public class GameManager_stickhero : MonoBehaviour
        // audio.PlayMusic();
         int diamond = DBManager.GetCurrency(DIAMOND);
        
-        if (diamond > 1)
+        if (diamond >= 1)
         {
             DBManager.SetCurrency(DIAMOND, diamond - 1);
          //   DBManager.ConsumeCurrency(DIAMOND, 1);
@@ -359,8 +360,7 @@ public class GameManager_stickhero : MonoBehaviour
         }
         else
         {
-            if (UIShopFeedback.GetInstance() != null)
-                UIShopFeedback.ShowMessage("Do not enough energy to start game! please buy more energy in the store.");
+            ShowNotification();
         }
         
     }

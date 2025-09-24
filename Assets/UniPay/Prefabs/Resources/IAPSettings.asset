@@ -19,7 +19,7 @@ MonoBehaviour:
   currencyList:
   - referenceID: 220be08c-be6d-4e63-a0c7-48b629257b77
     ID: gem
-    baseAmount: 50
+    baseAmount: 9
     maxAmount: 0
     icon: {fileID: 21300000, guid: 8b06dbfc926e74780a39e8a7d3b1edc0, type: 3}
   productList:
@@ -45,7 +45,7 @@ MonoBehaviour:
     rewardList:
     - type: 1
       currency:
-        rid: 5205192012697698555
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 10
@@ -77,7 +77,7 @@ MonoBehaviour:
     rewardList:
     - type: 1
       currency:
-        rid: 5205192012697698555
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 20
@@ -109,7 +109,7 @@ MonoBehaviour:
     rewardList:
     - type: 1
       currency:
-        rid: 5205192012697698555
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 30
@@ -141,7 +141,7 @@ MonoBehaviour:
     rewardList:
     - type: 1
       currency:
-        rid: 5205192012697698555
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 40
@@ -173,7 +173,7 @@ MonoBehaviour:
     rewardList:
     - type: 1
       currency:
-        rid: 5205192012697698555
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 50
@@ -205,7 +205,7 @@ MonoBehaviour:
     rewardList:
     - type: 1
       currency:
-        rid: 5205192012697698555
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 60
@@ -237,7 +237,7 @@ MonoBehaviour:
     rewardList:
     - type: 1
       currency:
-        rid: 5205192012697698555
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 70
@@ -269,7 +269,7 @@ MonoBehaviour:
     rewardList:
     - type: 1
       currency:
-        rid: 5205192012697698547
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 80
@@ -299,16 +299,9 @@ MonoBehaviour:
       amount: 0
       realPrice: 1.99$
     rewardList:
-    - type: 2
-      currency:
-        rid: -2
-      product:
-        rid: 5205192012697698548
-      amount: 1
-      realPrice: 
     - type: 1
       currency:
-        rid: 5205192012697698547
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 5
@@ -338,16 +331,9 @@ MonoBehaviour:
       amount: 0
       realPrice: 2.99$
     rewardList:
-    - type: 2
-      currency:
-        rid: -2
-      product:
-        rid: 5205192012697698549
-      amount: 1
-      realPrice: 
     - type: 1
       currency:
-        rid: 5205192012697698547
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 10
@@ -377,16 +363,9 @@ MonoBehaviour:
       amount: 0
       realPrice: 4.99$
     rewardList:
-    - type: 2
-      currency:
-        rid: -2
-      product:
-        rid: 5205192012697698550
-      amount: 1
-      realPrice: 
     - type: 1
       currency:
-        rid: 5205192012697698547
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 15
@@ -416,16 +395,9 @@ MonoBehaviour:
       amount: 0
       realPrice: 7.99$
     rewardList:
-    - type: 2
-      currency:
-        rid: -2
-      product:
-        rid: 5205192012697698551
-      amount: 1
-      realPrice: 
     - type: 1
       currency:
-        rid: 5205192012697698547
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 20
@@ -464,7 +436,7 @@ MonoBehaviour:
       realPrice: 
     - type: 1
       currency:
-        rid: 5205192012697698547
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 25
@@ -494,16 +466,9 @@ MonoBehaviour:
       amount: 0
       realPrice: 14.99$
     rewardList:
-    - type: 2
-      currency:
-        rid: -2
-      product:
-        rid: 5205192012697698553
-      amount: 1
-      realPrice: 
     - type: 1
       currency:
-        rid: 5205192012697698547
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 30
@@ -533,16 +498,9 @@ MonoBehaviour:
       amount: 0
       realPrice: 19.99$
     rewardList:
-    - type: 2
-      currency:
-        rid: -2
-      product:
-        rid: 5205192012697698554
-      amount: 1
-      realPrice: 
     - type: 1
       currency:
-        rid: 5205192012697698547
+        rid: 3282275830434365703
       product:
         rid: -2
       amount: 35
@@ -567,6 +525,14 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 3282275830434365703
+      type: {class: IAPCurrency, ns: UniPay, asm: Assembly-CSharp}
+      data:
+        referenceID: 220be08c-be6d-4e63-a0c7-48b629257b77
+        ID: gem
+        baseAmount: 100
+        maxAmount: 0
+        icon: {fileID: 21300000, guid: 8b06dbfc926e74780a39e8a7d3b1edc0, type: 3}
     - rid: 5205192012697698546
       type: {class: IAPCategory, ns: UniPay, asm: Assembly-CSharp}
       data:
@@ -581,174 +547,6 @@ MonoBehaviour:
         baseAmount: 50
         maxAmount: 0
         icon: {fileID: 21300000, guid: 18515ac390cbc4107818796f723d8b1e, type: 3}
-    - rid: 5205192012697698548
-      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
-      data:
-        referenceID: 8878e094-5c69-4f1c-9dce-61c294dddea9
-        ID: sub_pack_1
-        storeIDs: []
-        category:
-          rid: 5205192012697698546
-        type: 2
-        title: Pack 1
-        description: Includes x5 Ticket
-        discount: 0
-        fetch: 1
-        icon: {fileID: 21300000, guid: f211b824fcfc544a29d3b86ef3fd25f8, type: 3}
-        priceList:
-        - type: 0
-          currency:
-            rid: -2
-          product:
-            rid: -2
-          amount: 0
-          realPrice: 1.99$
-        rewardList:
-        - type: 2
-          currency:
-            rid: -2
-          product:
-            rid: 5205192012697698548
-          amount: 1
-          realPrice: 
-        - type: 1
-          currency:
-            rid: 5205192012697698547
-          product:
-            rid: -2
-          amount: 5
-          realPrice: 
-        requirement:
-          pairs: []
-          label: 
-        nextUpgrade:
-          rid: -2
-    - rid: 5205192012697698549
-      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
-      data:
-        referenceID: 883d00d7-3a57-4f4b-a0f7-025ee8d00f18
-        ID: sub_pack_2
-        storeIDs: []
-        category:
-          rid: 5205192012697698546
-        type: 2
-        title: Pack 2
-        description: Includes x10 Ticket
-        discount: 0
-        fetch: 1
-        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
-        priceList:
-        - type: 0
-          currency:
-            rid: -2
-          product:
-            rid: -2
-          amount: 0
-          realPrice: 2.99$
-        rewardList:
-        - type: 2
-          currency:
-            rid: -2
-          product:
-            rid: 5205192012697698549
-          amount: 1
-          realPrice: 
-        - type: 1
-          currency:
-            rid: 5205192012697698547
-          product:
-            rid: -2
-          amount: 10
-          realPrice: 
-        requirement:
-          pairs: []
-          label: 
-        nextUpgrade:
-          rid: -2
-    - rid: 5205192012697698550
-      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
-      data:
-        referenceID: b5761155-e93f-441c-8b4a-7907ab276910
-        ID: sub_pack_3
-        storeIDs: []
-        category:
-          rid: 5205192012697698546
-        type: 2
-        title: Pack 3
-        description: Includes x15 Ticket
-        discount: 0
-        fetch: 1
-        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
-        priceList:
-        - type: 0
-          currency:
-            rid: -2
-          product:
-            rid: -2
-          amount: 0
-          realPrice: 4.99$
-        rewardList:
-        - type: 2
-          currency:
-            rid: -2
-          product:
-            rid: 5205192012697698550
-          amount: 1
-          realPrice: 
-        - type: 1
-          currency:
-            rid: 5205192012697698547
-          product:
-            rid: -2
-          amount: 15
-          realPrice: 
-        requirement:
-          pairs: []
-          label: 
-        nextUpgrade:
-          rid: -2
-    - rid: 5205192012697698551
-      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
-      data:
-        referenceID: 4691552d-40b6-4183-8d57-fc845c26e4f8
-        ID: sub_pack_4
-        storeIDs: []
-        category:
-          rid: 5205192012697698546
-        type: 2
-        title: Pack 4
-        description: Includes x20 Ticket
-        discount: 0
-        fetch: 1
-        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
-        priceList:
-        - type: 0
-          currency:
-            rid: -2
-          product:
-            rid: -2
-          amount: 0
-          realPrice: 7.99$
-        rewardList:
-        - type: 2
-          currency:
-            rid: -2
-          product:
-            rid: 5205192012697698551
-          amount: 1
-          realPrice: 
-        - type: 1
-          currency:
-            rid: 5205192012697698547
-          product:
-            rid: -2
-          amount: 20
-          realPrice: 
-        requirement:
-          pairs: []
-          label: 
-        nextUpgrade:
-          rid: -2
     - rid: 5205192012697698552
       type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
       data:
@@ -791,98 +589,6 @@ MonoBehaviour:
           label: 
         nextUpgrade:
           rid: -2
-    - rid: 5205192012697698553
-      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
-      data:
-        referenceID: 90164ad2-4720-4b62-a80d-afeb13f8582e
-        ID: sub_pack_6
-        storeIDs: []
-        category:
-          rid: 5205192012697698546
-        type: 2
-        title: Pack 6
-        description: Includes x30 Ticket
-        discount: 0
-        fetch: 1
-        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
-        priceList:
-        - type: 0
-          currency:
-            rid: -2
-          product:
-            rid: -2
-          amount: 0
-          realPrice: 14.99$
-        rewardList:
-        - type: 2
-          currency:
-            rid: -2
-          product:
-            rid: 5205192012697698553
-          amount: 1
-          realPrice: 
-        - type: 1
-          currency:
-            rid: 5205192012697698547
-          product:
-            rid: -2
-          amount: 30
-          realPrice: 
-        requirement:
-          pairs: []
-          label: 
-        nextUpgrade:
-          rid: -2
-    - rid: 5205192012697698554
-      type: {class: IAPProduct, ns: UniPay, asm: Assembly-CSharp}
-      data:
-        referenceID: 2a8ce290-307d-40b0-8d3e-11ce83a3307f
-        ID: sub_pack_7
-        storeIDs: []
-        category:
-          rid: 5205192012697698546
-        type: 2
-        title: Pack 7
-        description: Includes x35 Ticket
-        discount: 0
-        fetch: 0
-        icon: {fileID: 21300000, guid: 6fd84bd8e2cf645c490588f77f3da2fc, type: 3}
-        priceList:
-        - type: 0
-          currency:
-            rid: -2
-          product:
-            rid: -2
-          amount: 0
-          realPrice: 19.99$
-        rewardList:
-        - type: 2
-          currency:
-            rid: -2
-          product:
-            rid: 5205192012697698554
-          amount: 1
-          realPrice: 
-        - type: 1
-          currency:
-            rid: 5205192012697698547
-          product:
-            rid: -2
-          amount: 35
-          realPrice: 
-        requirement:
-          pairs: []
-          label: 
-        nextUpgrade:
-          rid: -2
-    - rid: 5205192012697698555
-      type: {class: IAPCurrency, ns: UniPay, asm: Assembly-CSharp}
-      data:
-        referenceID: 220be08c-be6d-4e63-a0c7-48b629257b77
-        ID: ticket
-        baseAmount: 50
-        maxAmount: 0
-        icon: {fileID: 21300000, guid: 18515ac390cbc4107818796f723d8b1e, type: 3}
     - rid: 7839931945482715204
       type: {class: IAPCategory, ns: UniPay, asm: Assembly-CSharp}
       data:
